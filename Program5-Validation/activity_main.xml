@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service Request Form"
+
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+       android:padding="20sp"
+        android:hint="Enter Your Name"
+android:layout_marginTop="15sp"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service Location"
+        android:textSize="25sp"/>
+    <RadioGroup
+        android:id="@+id/RadGrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service Type"
+        android:layout_marginTop="15sp"
+        android:paddingLeft="15sp">
+
+    <RadioButton
+        android:id="@+id/radLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Local Data Center"
+        android:textSize="18sp"
+        />
+
+    <RadioButton
+        android:id="@+id/radioCloud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cloud"
+        android:textSize="18sp"
+        />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Services Required"
+        android:textSize="25sp"
+        android:layout_marginTop="15sp"/>
+
+    <CheckBox
+        android:id="@+id/chkWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Web Server Setup"
+        android:textSize="18sp"
+        android:layout_marginLeft="15sp"/>
+
+    <CheckBox
+        android:id="@+id/chkDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Database Server Setup"
+        android:textSize="18sp"
+        android:layout_marginLeft="15sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Request"
+        android:layout_marginTop="15sp"
+        android:textSize="20sp"
+        android:onClick="Validate"/>
+
+
+</LinearLayout>
+
